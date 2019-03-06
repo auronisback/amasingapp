@@ -1,15 +1,15 @@
 {
-  "main.css": "/amasingapp/static/css/main.fafa5bf5.chunk.css",
-  "main.js": "/amasingapp/static/js/main.df9016e9.chunk.js",
-  "main.js.map": "/amasingapp/static/js/main.df9016e9.chunk.js.map",
+  "main.css": "/amasingapp/static/css/main.daee7b94.chunk.css",
+  "main.js": "/amasingapp/static/js/main.a334e5af.chunk.js",
+  "main.js.map": "/amasingapp/static/js/main.a334e5af.chunk.js.map",
   "runtime~main.js": "/amasingapp/static/js/runtime~main.c8acf68b.js",
   "runtime~main.js.map": "/amasingapp/static/js/runtime~main.c8acf68b.js.map",
   "static/css/2.88335501.chunk.css": "/amasingapp/static/css/2.88335501.chunk.css",
   "static/js/2.e09c5445.chunk.js": "/amasingapp/static/js/2.e09c5445.chunk.js",
   "static/js/2.e09c5445.chunk.js.map": "/amasingapp/static/js/2.e09c5445.chunk.js.map",
   "index.html": "/amasingapp/index.html",
-  "precache-manifest.db53b6398c2c3d801d0e82abd9a98628.js": "/amasingapp/precache-manifest.db53b6398c2c3d801d0e82abd9a98628.js",
+  "precache-manifest.1b2c639ba930db3237a7373447dace71.js": "/amasingapp/precache-manifest.1b2c639ba930db3237a7373447dace71.js",
   "service-worker.js": "/amasingapp/service-worker.js",
   "static/css/2.88335501.chunk.css.map": "/amasingapp/static/css/2.88335501.chunk.css.map",
-  "static/css/main.fafa5bf5.chunk.css.map": "/amasingapp/static/css/main.fafa5bf5.chunk.css.map"
+  "static/css/main.daee7b94.chunk.css.map": "/amasingapp/static/css/main.daee7b94.chunk.css.map"
 }
