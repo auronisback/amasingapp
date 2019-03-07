@@ -18,7 +18,7 @@ export default class ParkInfo extends Component {
 
   /**
    * Converts a distance in a pretty printable form.
-   * @param[in] distance The distance from the destination
+   * @param {string} distance The distance from the destination
    * @return string The string representing distance
    * */
   static _distanceToString(distance) {

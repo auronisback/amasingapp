@@ -46,7 +46,7 @@ export class MapPanel extends Component {
   /**
    * Handler for click on the map. Calls the destination setter of
    * with the handler specified in props.
-   * @param[in] evt The generated map event
+   * @param {Event} evt The generated map event
    * */
   onMapClick = (evt) => {
 

@@ -73,7 +73,7 @@ export class ParkMarker extends Component {
 
   /**
    * Gets the position of the marker.
-   * @return {lat: number, lng: number} An object with coordinates for the marker
+   * @return {Object} An object with coordinates for the marker
    * */
   getPosition = () => {
     return {

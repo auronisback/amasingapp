@@ -9,7 +9,7 @@ export class SearchWindow extends Component {
 
   /**
    * Creates the object, initializing icons.
-   * @param[in] props React component's properties
+   * @param {Object} props React component's properties
    * */
   constructor(props) {
     super(props);
@@ -61,7 +61,7 @@ export class SearchWindow extends Component {
               </div>
             </div>
             <button className={'btn btn-primary btn-sm'}
-                    disabled={this.props.isLoading ? true : false}
+                    disabled={this.props.isLoading}
             >
               {this.props.isLoading ? (<FontAwesomeIcon icon={'spinner'} pulse/>) : 'Search'}
             </button>
@@ -85,7 +85,7 @@ export class SearchWindow extends Component {
 
   /**
    * Handler function for changing in the distance input.
-   * @param[in] evt The generated event
+   * @param {Event} evt The generated event
    * */
   onDistanceChanged = (evt) => {
     this.props.onDistanceChanged(evt.target.value);
@@ -93,7 +93,7 @@ export class SearchWindow extends Component {
 
   /**
    * Handler for slider changing.
-   * @param[in] value Slider value
+   * @param {number} value Slider value
    * */
   onSliderChanged = (value) => {
     this.props.onWalkWeightChanged(value);
@@ -101,7 +101,7 @@ export class SearchWindow extends Component {
 
   /**
    * Handler function for submitting the form.
-   * @param[in] evt The generated event
+   * @param {Event} evt The generated event
    * */
   onFormSubmitted = (evt) => {
     evt.nativeEvent.preventDefault(); // Do not actually submit
@@ -112,7 +112,7 @@ export class SearchWindow extends Component {
   /**
    * Static utility function to retrieve Date object from
    * time inputs.
-   * @param[in] time The time input as a string with format 'HH:mm'
+   * @param {Object} time The time input as a string with format 'HH:mm'
    * */
   static getTimeFromString(time) {
     let pieces = time.split(':');

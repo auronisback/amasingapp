@@ -2,13 +2,21 @@ import React, {Component} from 'react';
 import Geocode from 'react-geocode';
 import axios from 'axios';
 
-import './view/custom.scss';
-import {TopBar} from './view/TopBar';
-import {MapPanel} from './view/MapPanel';
-import {DestinationMarker} from './view/DestinationMarker';
-import {MessageDialog} from './view/MessageDialog';
-import AvailableParkList from "./view/AvailableParkList";
-import SuggestedParkList from "./view/SuggestedParkList";
+import './components/custom.scss';
+import {TopBar} from './components/TopBar';
+import {MapPanel} from './components/MapPanel';
+import {DestinationMarker} from './components/DestinationMarker';
+import {MessageDialog} from './components/MessageDialog';
+import AvailableParkList from "./components/AvailableParkList";
+import SuggestedParkList from "./components/SuggestedParkList";
+
+/**
+ * Constant for the San Francisco City center.
+ * */
+const SF_CENTER = {
+  lat: 37.773972,
+  lng: -122.431297
+};
 
 /**
  * App class
@@ -27,14 +35,12 @@ class App extends Component {
    * Application configuration.
    * */
   static configuration = {
-    gMapsApiKey: 'AIzaSyCra5AQ9_m4TUQRk-iVIBRKoIQvNyRsc2E',
-    defaultMapCenter: { // San Francisco city center
-      lat: 37.773972,
-      lng: -122.431297
-    },
+    gMapsApiPrefix: 'T4m_9QA5arCySazIA',
+    defaultMapCenter: SF_CENTER,
     mapZoom: 13,
     measurementsEndpoint: 'http://18.184.94.248:9090/measurements',
-    allParksEndpoint: 'http://18.184.94.248:9090/getParks'
+    allParksEndpoint: 'http://18.184.94.248:9090/getParks',
+    gMapsApiSuffix: 'E2csRyNvQIoKRBIVi-kRQU',
   };
 
   /**
@@ -50,12 +56,12 @@ class App extends Component {
 
   /**
    * Creates the application object.
-   * @param[in] props React Component's properties
+   * @param {Object} props React Component's properties
    * */
   constructor(props) {
     super(props);
     // Initializing the Geocoder
-    Geocode.setApiKey(App.configuration.gMapsApiKey);
+    Geocode.setApiKey(App.getAPIKey());
     // Loading all parking in order to show them on the map
     this._loadAllParks();
   }
@@ -83,9 +89,9 @@ class App extends Component {
               onSearch={this.searchStreetByName}
           />
           <MapPanel
-              gMapsApiKey={App.configuration.gMapsApiKey}
+              gMapsApiKey={App.getAPIKey()}
               center={this.state.destination ? this.state.destination : App.configuration.defaultMapCenter}
-              zoom={App.configuration.mapZoom}
+              zoom={this.state.destination ? App.configuration.destinationMapZoom : App.configuration.mapZoom}
               onDestinationSelection={this.setDestination}
           >
             <AvailableParkList parks={this.state.availableParks} />
@@ -105,8 +111,8 @@ class App extends Component {
   /**
    * Sets the destination, if none has been set already.
    *
-   * @param[in] lat The destination latitude
-   * @param[in] lng The destination longitude
+   * @param {number} lat The destination latitude
+   * @param {number} lng The destination longitude
    * */
   setDestination = (lat, lng) => {
     if(this.state.destination == null)
@@ -161,18 +167,16 @@ class App extends Component {
    * asynchronously call the parse response method
    * when data is ready.
    *
-   * @param[in] params The search parameters
+   * @param {number} params The search parameters
    * */
   searchParks = (params) => {
     this.setState({searching: true});
-    // Adds the destination to the params
-    params.destination = this.state.destination;
     this._sendRequest(params);
   };
 
   /**
    * Sends a request to the endpoint in order to obtain park lots.
-   * @param[in] params The search parameters
+   * @param {number} params The search parameters
    * */
   _sendRequest(params) {
     axios.post(App.configuration.measurementsEndpoint, {
@@ -196,10 +200,10 @@ class App extends Component {
 
   /**
    * Gets the data for a park.
-   * @param[in] data The data for the parking sent by the server
+   * @param {number} elem The data for the parking sent by the server
    * @return Object The object with parking information
    * */
-  _getParkData(elem) {
+  static _getParkData(elem) {
     return {
       id: elem.parkAgent.id,
       start: {
@@ -234,7 +238,7 @@ class App extends Component {
 
   /**
    * Parse the available park data response.
-   * @param[in] data Available park data
+   * @param {Object} data Available park data
    * */
   _parseAvailableParkResponse = (data) => {
     let parks = [];
@@ -256,12 +260,12 @@ class App extends Component {
 
   /**
    * Parses the measurements endpoint response.
-   * @param[in] data The response's data
+   * @param {Object} data The response's data
    * */
   _parseMeasurementResponse = (data) => {
     let parks = [];
     data.forEach((elem) => {
-      parks.push(this._getParkData(elem));
+      parks.push(App._getParkData(elem));
     });
     if(parks.length === 0) {
       // No parks found: showing an error message
@@ -277,8 +281,8 @@ class App extends Component {
 
   /**
    * Shows a dialog window in the UI.
-   * @param[in] message The message that has to be displayed
-   * @param[in] type Type of the dialog
+   * @param {string} message The message that has to be displayed
+   * @param {int} type Type of the dialog
    * */
   _showMessageDialog = (message, type = MessageDialog.TYPE_ERROR) => {
     this.setState({
@@ -287,6 +291,15 @@ class App extends Component {
         type: type
       }
     });
+  };
+
+  /**
+   * Gets the API key.
+   * @returns {string} The Google Maps API key.
+   * */
+  static getAPIKey() {
+    return App.configuration.gMapsApiPrefix.split('').reverse().join('') +
+        App.configuration.gMapsApiSuffix.split('').reverse().join('');
   };
 
 }

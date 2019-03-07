@@ -95,7 +95,7 @@ export class DestinationMarker extends Component {
 
   /**
    * Handler method when dow is changed into search window.
-   * @param[in] dow Selected day of the week
+   * @param {int} dow Selected day of the week
    * */
   onDowUpdate = (dow) => {
     this.setState({dow: dow});
@@ -103,15 +103,15 @@ export class DestinationMarker extends Component {
 
   /**
    * Handler method when time is changed.
-   * @param[in] time Time in the search window
+   * @param {Object} time Time in the search window
    * */
   onTimeUpdate = (time) => {
     this.setState({time: time});
-  }
+  };
 
   /**
    * Handler method for changing in the max distance.
-   * @param[in] distance Max distance for parks
+   * @param {string} distance Max distance for parks
    * */
   onDistanceUpdate = (distance) => {
     this.setState({distance: +distance > 0 ? +distance : 0});
@@ -119,7 +119,7 @@ export class DestinationMarker extends Component {
 
   /**
    * Handler method for updating the walking weight.
-   * @param[in] walkWeight Weight given to walk
+   * @param {number} walkWeight Weight given to walk
    * */
   onWalkWeightUpdate = (walkWeight) => {
     this.setState({walkWeight: walkWeight});

@@ -66,7 +66,7 @@ export class TopBar extends Component {
 
   /**
    * Handler for changing the street name input.
-   * @param[in] evt The generated event
+   * @param {Event} evt The generated event
    * */
   onSearchInputChanged = (evt) => {
     this.setState({streetName: evt.target.value});
@@ -75,7 +75,7 @@ export class TopBar extends Component {
   /**
    * Handler for the pressure of a key in the input. If the pressed key
    * is ENTER, then it will fire the search.
-   * @param[in] evt The generated event
+   * @param {Event} evt The generated event
    * */
   onInputKeyPressed = (evt) => {
     if(evt.key === 'Enter')
