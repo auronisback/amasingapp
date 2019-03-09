@@ -49,7 +49,6 @@ export class MapPanel extends Component {
    * @param {Event} evt The generated map event
    * */
   onMapClick = (evt) => {
-
     if(this.props.onDestinationSelection)
       this.props.onDestinationSelection(evt.latLng.lat(), evt.latLng.lng());
   };

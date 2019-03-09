@@ -99,6 +99,8 @@ class App extends Component {
                 destination={this.state.destination}
                 searchVisible={this.state.searchVisible}
                 onSearch={this.searchParks}
+                onSearchClosed={this.onSearchWindowClosed}
+                onMarkerClick={this.onDestinationClick}
                 isLoading={this.state.searching}
             />
             <SuggestedParkList parks={this.state.parks} />
@@ -107,6 +109,20 @@ class App extends Component {
         </div>
     );
   }
+
+  /**
+   * Handles the click on the destination marker.
+   * */
+  onDestinationClick = () => {
+    this.setState({searchVisible: true});
+  };
+
+  /**
+   * Handles the closing of the search window.
+   * */
+  onSearchWindowClosed = () => {
+    this.setState({searchVisible: false});
+  };
 
   /**
    * Sets the destination, if none has been set already.
@@ -170,7 +186,7 @@ class App extends Component {
    * @param {number} params The search parameters
    * */
   searchParks = (params) => {
-    this.setState({searching: true});
+    this.setState({parks: [], searching: true});
     this._sendRequest(params);
   };
 

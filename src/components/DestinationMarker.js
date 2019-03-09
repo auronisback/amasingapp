@@ -1,14 +1,6 @@
 import React, {Component} from 'react';
 import {SearchWindow} from './SearchWindow';
-import {Marker, OverlayView, Circle} from "react-google-maps";
-
-/**
- * Gets the marker's offset for the search window.
- * */
-const getPixelPositionOffset = pixelOffset => (width, height) => ({
-  x: -(width / 2) + pixelOffset.x,
-  y: -(height / 2) + pixelOffset.y
-});
+import {Marker, InfoWindow, Circle} from "react-google-maps";
 
 /**
  * Default max distance for searches.
@@ -57,11 +49,9 @@ export class DestinationMarker extends Component {
       return null;
     // Conditionally rendering the search window
     const overlay = (this.props.searchVisible ?
-            <OverlayView
+            <InfoWindow
                 position={this.props.destination}
-                mapPaneName={OverlayView.OVERLAY_MOUSE_TARGET}
-                getPixelPositionOffset={getPixelPositionOffset(DestinationMarker.markerPixelOffset)}
-                options={{enableEventPropagation: false}}
+                onCloseClick={this.props.onSearchClosed}
             >
               <SearchWindow
                   onSubmit={this.onSubmit}
@@ -76,10 +66,13 @@ export class DestinationMarker extends Component {
                   onDistanceChanged={this.onDistanceUpdate}
                   onWalkWeightChanged={this.onWalkWeightUpdate}
               />
-            </OverlayView> : null
+            </InfoWindow> : null
     );
     return (
-        <Marker position={this.props.destination}>
+        <Marker
+            position={this.props.destination}
+            onClick={this.props.onMarkerClick}
+        >
           {overlay}
           <Circle
               center={this.props.destination}

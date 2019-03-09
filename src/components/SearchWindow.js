@@ -70,10 +70,20 @@ export class SearchWindow extends Component {
     );
   }
 
+  /**
+   * Handler method for the change on dow.
+   *
+   * @param {Event} evt The generated event
+   * */
   onDowChanged = (evt) => {
     this.setState({dow: evt.target.value});
   };
 
+  /**
+   * Handler method for the change on time.
+   *
+   * @param {Event} evt The generated event
+   * */
   onTimeChanged = (evt) => {
     const time = SearchWindow.getTimeFromString(evt.target.value);
     // Calling the handler function
@@ -85,6 +95,7 @@ export class SearchWindow extends Component {
 
   /**
    * Handler function for changing in the distance input.
+   *
    * @param {Event} evt The generated event
    * */
   onDistanceChanged = (evt) => {
@@ -93,6 +104,7 @@ export class SearchWindow extends Component {
 
   /**
    * Handler for slider changing.
+   *
    * @param {number} value Slider value
    * */
   onSliderChanged = (value) => {
@@ -101,6 +113,7 @@ export class SearchWindow extends Component {
 
   /**
    * Handler function for submitting the form.
+   *
    * @param {Event} evt The generated event
    * */
   onFormSubmitted = (evt) => {
@@ -112,6 +125,7 @@ export class SearchWindow extends Component {
   /**
    * Static utility function to retrieve Date object from
    * time inputs.
+   *
    * @param {Object} time The time input as a string with format 'HH:mm'
    * */
   static getTimeFromString(time) {
