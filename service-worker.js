@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/amasingapp/precache-manifest.34169bafa6dbde43b80a0e82c51a1698.js"
+  "/amasingapp/precache-manifest.6280ce2c217900d82ae8b1a479734157.js"
 );
 
 workbox.clientsClaim();
