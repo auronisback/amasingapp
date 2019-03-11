@@ -27,6 +27,9 @@ export class ParkMarker extends Component {
    * Renders the component.
    * */
   render() {
+    // No parking given: renders nothing
+    if(!this.props.parking)
+      return null;
     return (
         <Marker
             position={this.getPosition()}

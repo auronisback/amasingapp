@@ -19,14 +19,6 @@ export class DestinationMarker extends Component {
   static CIRCLE_STROKE_WEIGHT = 0;
 
   /**
-   * Offset in pixel for the marker.
-   * */
-  static markerPixelOffset = {
-    x: 0,
-    y: -32
-  };
-
-  /**
    * React Component's state.
    * */
   state = {
