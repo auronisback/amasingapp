@@ -29,7 +29,7 @@ export class TopBar extends Component {
             <div className={'col-6'}>
               <ul>
                 <li>
-                  <button className={'btn btn-primary'}
+                  <button className={'btn btn-primary ResetButton'}
                           onClick={this.props.onReset}>
                     <FontAwesomeIcon icon={'undo'} />
                   </button>

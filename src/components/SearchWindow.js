@@ -37,12 +37,12 @@ export class SearchWindow extends Component {
               <option value={5}>Friday</option>
               <option value={6}>Saturday</option>
             </select>
-            <input type={'time'} className={'form-control'}
+            <input type={'time'} className={'form-control TimeInput'}
                    value={this.props.time.h + ':' +
                    ('' + this.props.time.m).padStart(2, '0')}
                    onChange={this.onTimeChanged}
             />
-            <input type={'number'} placeholder={'distance (m)'} className={'form-control'}
+            <input type={'number'} placeholder={'distance (m)'} className={'form-control DistanceInput'}
                    value={this.props.distance === 0 ? '' : this.props.distance}
                    onChange={this.onDistanceChanged}
                    min={0}
@@ -76,7 +76,8 @@ export class SearchWindow extends Component {
    * @param {Event} evt The generated event
    * */
   onDowChanged = (evt) => {
-    this.setState({dow: evt.target.value});
+    if(this.props.onDowChanged)
+      this.props.onDowChanged(evt.target.value);
   };
 
   /**

@@ -29,16 +29,17 @@ export default class AvailableParkList extends Component {
    * */
   _buildAvailableParks = () => {
     let availableParks = [];
-    this.props.parks.forEach((elem) => {
-      availableParks.push(
-          <ParkStroke
-              key={elem.id}
-              start={elem.start}
-              end={elem.end}
-              color={AvailableParkList.STROKE_COLOR}
-              opacity={AvailableParkList.STROKE_OPACITY}
-          />);
-    });
+    if(this.props.parks)
+      this.props.parks.forEach((elem) => {
+        availableParks.push(
+            <ParkStroke
+                key={elem.id}
+                start={elem.start}
+                end={elem.end}
+                color={AvailableParkList.STROKE_COLOR}
+                opacity={AvailableParkList.STROKE_OPACITY}
+            />);
+      });
     return availableParks;
   }
 }
