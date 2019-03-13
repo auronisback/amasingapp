@@ -9,8 +9,9 @@ describe('<DestinationMarker>', () => {
   it('Should show a marker if a destination is set', () => {
     const stubDestination = {lat: 0, lng: 0};
     const stubTime = {h: 15, m: 55};
+    const stubDow = 1;
     const destinationMarker = shallow(<DestinationMarker />);
-    destinationMarker.setState({time: stubTime});
+    destinationMarker.setState({time: stubTime, dow: stubDow});
     expect(destinationMarker).toMatchSnapshot();
     expect(destinationMarker.find('Marker')).toHaveLength(0);
     destinationMarker.setProps({destination: stubDestination});
@@ -20,9 +21,10 @@ describe('<DestinationMarker>', () => {
   it('Should show the search window if it is visible', () => {
     const stubDestination = {lat: 0, lng: 0};
     const stubTime = {h: 15, m: 55};
+    const stubDow = 1;
     const destinationMarker = shallow(<DestinationMarker destination={stubDestination} />);
     // Setting a stub time
-    destinationMarker.setState({time: stubTime});
+    destinationMarker.setState({time: stubTime, dow: stubDow});
     expect(destinationMarker).toMatchSnapshot();
     // Setting the search window as visible
     destinationMarker.setProps({searchVisible: true});
