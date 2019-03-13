@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchWindow> Renders without crashing 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="SearchPanel form-group"
+  >
+    <select
+      className="form-control"
+      onChange={[Function]}
+    >
+      <option
+        value={0}
+      >
+        Sunday
+      </option>
+      <option
+        value={1}
+      >
+        Monday
+      </option>
+      <option
+        value={2}
+      >
+        Tuesday
+      </option>
+      <option
+        value={3}
+      >
+        Wednesday
+      </option>
+      <option
+        value={4}
+      >
+        Thursday
+      </option>
+      <option
+        value={5}
+      >
+        Friday
+      </option>
+      <option
+        value={6}
+      >
+        Saturday
+      </option>
+    </select>
+    <input
+      className="form-control TimeInput"
+      onChange={[Function]}
+      type="time"
+      value="15:55"
+    />
+    <input
+      className="form-control DistanceInput"
+      min={0}
+      onChange={[Function]}
+      placeholder="distance (m)"
+      step={50}
+      type="number"
+    />
+    <div
+      className="WalkingSlider"
+    >
+      <div
+        className="IconWrapper"
+      >
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon="blind"
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      </div>
+      <ComponentEnhancer(undefined)
+        activeDotStyle={Object {}}
+        className="Slider"
+        disabled={false}
+        dotStyle={Object {}}
+        dots={false}
+        handle={[Function]}
+        handleStyle={
+          Array [
+            Object {},
+          ]
+        }
+        included={true}
+        marks={Object {}}
+        max={100}
+        min={0}
+        onAfterChange={[Function]}
+        onBeforeChange={[Function]}
+        onChange={[Function]}
+        prefixCls="rc-slider"
+        railStyle={Object {}}
+        step={1}
+        trackStyle={
+          Array [
+            Object {},
+          ]
+        }
+        vertical={false}
+      />
+      <div
+        className="IconWrapper"
+      >
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon="walking"
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      </div>
+    </div>
+    <button
+      className="btn btn-primary btn-sm"
+    >
+      Search
+    </button>
+  </div>
+</form>
+`;

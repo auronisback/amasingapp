@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ParkInfo> Should render without crashing 1`] = `
+<div
+  className="ParkInfoWindow container"
+>
+  <div
+    className="row"
+  >
+    Occupancy Rate: 
+    12
+    %
+  </div>
+  <div
+    className="row"
+  >
+    Distance: 
+    321m
+  </div>
+  <div
+    className="row"
+  >
+    Park Number: 
+    6
+  </div>
+  <div
+    className="row"
+  >
+    Type: 
+    residential
+  </div>
+  <div
+    className="row"
+  >
+    Had measure: 
+    Yes
+  </div>
+</div>
+`;

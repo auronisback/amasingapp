@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SuggestedParkList> Should be empty when no suggested park has been given 1`] = `<div />`;
+
+exports[`<SuggestedParkList> Should show park lots when given 1`] = `
+<div>
+  <ParkMarker
+    key="1"
+    label={1}
+    parking={
+      Object {
+        "distance": 100,
+        "end": Object {
+          "lat": 2,
+          "lng": 2,
+        },
+        "haveMes": false,
+        "id": 1,
+        "label": 1,
+        "occupancy": 0.12,
+        "parkNumber": 6,
+        "start": Object {
+          "lat": 1,
+          "lng": 1,
+        },
+        "streetType": "primary",
+      }
+    }
+  />
+  <ParkMarker
+    key="2"
+    label={2}
+    parking={
+      Object {
+        "distance": 105,
+        "end": Object {
+          "lat": 20,
+          "lng": 20,
+        },
+        "haveMes": true,
+        "id": 2,
+        "label": 2,
+        "occupancy": 0.22,
+        "parkNumber": 14,
+        "start": Object {
+          "lat": 10,
+          "lng": 10,
+        },
+        "streetType": "secondary",
+      }
+    }
+  />
+</div>
+`;

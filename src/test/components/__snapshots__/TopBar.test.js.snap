@@ -1,0 +1,172 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TopBar> Should call the handler when reset button clicked 1`] = `
+<header
+  className="container fluid TopBar"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-6"
+    >
+      <h1>
+        aMasIngApp
+      </h1>
+    </div>
+    <div
+      className="col-6"
+    >
+      <ul>
+        <li>
+          <button
+            className="btn btn-primary ResetButton"
+            onClick={[MockFunction]}
+          >
+            <FontAwesomeIcon
+              border={false}
+              className=""
+              fixedWidth={false}
+              flip={null}
+              icon="undo"
+              inverse={false}
+              listItem={false}
+              mask={null}
+              pull={null}
+              pulse={false}
+              rotation={null}
+              size={null}
+              spin={false}
+              symbol={false}
+              title=""
+              transform={null}
+            />
+          </button>
+        </li>
+        <li>
+          <div
+            className="input-group"
+          >
+            <input
+              className="form-control"
+              onChange={[Function]}
+              onKeyPress={[Function]}
+              placeholder="Search by street"
+              type="text"
+              value=""
+            />
+            <button
+              className="input-group-append btn btn-primary SearchButton"
+              onClick={[Function]}
+            >
+              <FontAwesomeIcon
+                border={false}
+                className=""
+                fixedWidth={false}
+                flip={null}
+                icon="search"
+                inverse={false}
+                listItem={false}
+                mask={null}
+                pull={null}
+                pulse={false}
+                rotation={null}
+                size={null}
+                spin={false}
+                symbol={false}
+                title=""
+                transform={null}
+              />
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+`;
+
+exports[`<TopBar> Should call the search handler when searching a street 1`] = `
+<header
+  className="container fluid TopBar"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-6"
+    >
+      <h1>
+        aMasIngApp
+      </h1>
+    </div>
+    <div
+      className="col-6"
+    >
+      <ul>
+        <li>
+          <button
+            className="btn btn-primary ResetButton"
+          >
+            <FontAwesomeIcon
+              border={false}
+              className=""
+              fixedWidth={false}
+              flip={null}
+              icon="undo"
+              inverse={false}
+              listItem={false}
+              mask={null}
+              pull={null}
+              pulse={false}
+              rotation={null}
+              size={null}
+              spin={false}
+              symbol={false}
+              title=""
+              transform={null}
+            />
+          </button>
+        </li>
+        <li>
+          <div
+            className="input-group"
+          >
+            <input
+              className="form-control"
+              onChange={[Function]}
+              onKeyPress={[Function]}
+              placeholder="Search by street"
+              type="text"
+              value=""
+            />
+            <button
+              className="input-group-append btn btn-primary SearchButton"
+              onClick={[Function]}
+            >
+              <FontAwesomeIcon
+                border={false}
+                className=""
+                fixedWidth={false}
+                flip={null}
+                icon="search"
+                inverse={false}
+                listItem={false}
+                mask={null}
+                pull={null}
+                pulse={false}
+                rotation={null}
+                size={null}
+                spin={false}
+                symbol={false}
+                title=""
+                transform={null}
+              />
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+`;

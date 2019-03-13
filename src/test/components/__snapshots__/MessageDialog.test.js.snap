@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MessageDialog> Should render a message 1`] = `
+<div
+  className="alert alert-info ErrorDialog"
+>
+  <h4
+    className="alert-heading"
+  >
+    Warning!
+  </h4>
+  <p>
+    Test message
+  </p>
+  <span
+    className="CloseError"
+  >
+    Click to close
+  </span>
+</div>
+`;
+
+exports[`<MessageDialog> Should render a warning 1`] = `
+<div
+  className="alert alert-warning ErrorDialog"
+>
+  <h4
+    className="alert-heading"
+  >
+    Warning!
+  </h4>
+  <p>
+    Test warning
+  </p>
+  <span
+    className="CloseError"
+  >
+    Click to close
+  </span>
+</div>
+`;
+
+exports[`<MessageDialog> Should render an error 1`] = `
+<div
+  className="alert alert-danger ErrorDialog"
+>
+  <h4
+    className="alert-heading"
+  >
+    Warning!
+  </h4>
+  <p>
+    Test error
+  </p>
+  <span
+    className="CloseError"
+  >
+    Click to close
+  </span>
+</div>
+`;

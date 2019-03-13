@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AvailabelParkList> Should be empty when no park has been given 1`] = `<div />`;
+
+exports[`<AvailabelParkList> Should show park lots when given 1`] = `
+<div>
+  <ParkStroke
+    color="#777"
+    end={
+      Object {
+        "lat": 100,
+        "lng": 1000,
+      }
+    }
+    key="1"
+    opacity={0.5}
+    start={
+      Object {
+        "lat": 1,
+        "lng": 10,
+      }
+    }
+  />
+  <ParkStroke
+    color="#777"
+    end={
+      Object {
+        "lat": 200,
+        "lng": 2000,
+      }
+    }
+    key="2"
+    opacity={0.5}
+    start={
+      Object {
+        "lat": 2,
+        "lng": 20,
+      }
+    }
+  />
+</div>
+`;

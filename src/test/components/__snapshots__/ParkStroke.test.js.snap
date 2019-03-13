@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ParkStroke> Should render without crashing 1`] = `
+<Polyline
+  options={
+    Object {
+      "strokeColor": "#FFF",
+      "strokeOpacity": 0.5,
+    }
+  }
+  path={
+    Array [
+      undefined,
+      undefined,
+    ]
+  }
+/>
+`;

@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ParkMarker> Should not render if no park has been given 1`] = `""`;
+
+exports[`<ParkMarker> Should render correctly if park has been passed 1`] = `""`;

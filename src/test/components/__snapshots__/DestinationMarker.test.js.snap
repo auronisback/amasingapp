@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DestinationMarker> Should show a marker if a destination is set 1`] = `""`;
+
+exports[`<DestinationMarker> Should show the search window if it is visible 1`] = `
+<Marker
+  position={
+    Object {
+      "lat": 0,
+      "lng": 0,
+    }
+  }
+>
+  <Circle
+    center={
+      Object {
+        "lat": 0,
+        "lng": 0,
+      }
+    }
+    options={
+      Object {
+        "fillColor": "#F00",
+        "strokeWeight": 0,
+      }
+    }
+    radius={100}
+  />
+</Marker>
+`;
+
+exports[`<DestinationMarker> Should show the search window if it is visible 2`] = `
+<Marker
+  position={
+    Object {
+      "lat": 0,
+      "lng": 0,
+    }
+  }
+>
+  <InfoWindow
+    position={
+      Object {
+        "lat": 0,
+        "lng": 0,
+      }
+    }
+  >
+    <SearchWindow
+      className="SearchOpened"
+      distance={100}
+      dow={1}
+      onDistanceChanged={[Function]}
+      onDowChanged={[Function]}
+      onSubmit={[Function]}
+      onTimeChanged={[Function]}
+      onWalkWeightChanged={[Function]}
+      time={
+        Object {
+          "h": 15,
+          "m": 55,
+        }
+      }
+      walkWeight={50}
+    />
+  </InfoWindow>
+  <Circle
+    center={
+      Object {
+        "lat": 0,
+        "lng": 0,
+      }
+    }
+    options={
+      Object {
+        "fillColor": "#F00",
+        "strokeWeight": 0,
+      }
+    }
+    radius={100}
+  />
+</Marker>
+`;
