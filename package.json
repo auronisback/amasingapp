@@ -4,9 +4,18 @@
   "private": true,
   "homepage": "https://auronisback.github.io/amasingapp/",
   "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/node_modules/"
+    ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ]
+  },
+  "jestSonar": {
+    "reportPath": "testResults",
+    "reportFile": "sonar-report.xml",
+    "indent": 4
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.15",
@@ -35,7 +44,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom --testResultsProcessor /home/bender/Uni/INGSW2/aMasIng/amasingapp/node_modules/jest-sonar-reporter/index.js",
     "predeploy": "react-scripts build",
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
@@ -53,6 +62,7 @@
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.10.0",
     "enzyme-to-json": "^3.3.5",
+    "jest-sonar-reporter": "^2.0.0",
     "react-test-renderer": "^16.8.4"
   }
 }
