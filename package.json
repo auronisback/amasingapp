@@ -44,7 +44,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom --testResultsProcessor /home/bender/Uni/INGSW2/aMasIng/amasingapp/node_modules/jest-sonar-reporter/index.js",
+    "test": "react-scripts test --env=jsdom --testResultsProcessor '<rootDir>'/node_modules/jest-sonar-reporter/index.js",
     "predeploy": "react-scripts build",
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
