@@ -28,7 +28,6 @@ App {
     "_callbacks": Array [],
     "_renderer": ReactShallowRenderer {
       "_context": Object {},
-      "_currentlyRenderingComponent": null,
       "_didScheduleRenderPhaseUpdate": false,
       "_dispatcher": Object {
         "readContext": [Function],
@@ -50,7 +49,6 @@ App {
       "_isReRender": false,
       "_newState": null,
       "_numberOfReRenders": 0,
-      "_previousComponentIdentity": null,
       "_renderPhaseUpdates": null,
       "_rendered": <div
         className="App"
@@ -129,7 +127,6 @@ App {
     "_callbacks": Array [],
     "_renderer": ReactShallowRenderer {
       "_context": Object {},
-      "_currentlyRenderingComponent": null,
       "_didScheduleRenderPhaseUpdate": false,
       "_dispatcher": Object {
         "readContext": [Function],
@@ -151,7 +148,6 @@ App {
       "_isReRender": false,
       "_newState": null,
       "_numberOfReRenders": 0,
-      "_previousComponentIdentity": null,
       "_renderPhaseUpdates": null,
       "_rendered": <div
         className="App"
@@ -240,7 +236,6 @@ App {
     "_callbacks": Array [],
     "_renderer": ReactShallowRenderer {
       "_context": Object {},
-      "_currentlyRenderingComponent": null,
       "_didScheduleRenderPhaseUpdate": false,
       "_dispatcher": Object {
         "readContext": [Function],
@@ -262,7 +257,6 @@ App {
       "_isReRender": false,
       "_newState": null,
       "_numberOfReRenders": 0,
-      "_previousComponentIdentity": null,
       "_renderPhaseUpdates": null,
       "_rendered": <div
         className="App"
@@ -345,7 +339,6 @@ App {
     "_callbacks": Array [],
     "_renderer": ReactShallowRenderer {
       "_context": Object {},
-      "_currentlyRenderingComponent": null,
       "_didScheduleRenderPhaseUpdate": false,
       "_dispatcher": Object {
         "readContext": [Function],
@@ -367,7 +360,6 @@ App {
       "_isReRender": false,
       "_newState": null,
       "_numberOfReRenders": 0,
-      "_previousComponentIdentity": null,
       "_renderPhaseUpdates": null,
       "_rendered": <div
         className="App"
