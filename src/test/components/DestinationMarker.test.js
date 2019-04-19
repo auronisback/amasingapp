@@ -30,4 +30,39 @@ describe('<DestinationMarker>', () => {
     destinationMarker.setProps({searchVisible: true});
     expect(destinationMarker).toMatchSnapshot();
   });
+
+  it('Should update its state when changes occurs in search criteria', () => {
+    const wrapper = shallow(<DestinationMarker/>);
+    const marker = wrapper.instance();
+    const dow = 3;
+    const time = {h: 0, m: 0};
+    const distance = 100;
+    const noDistance = -10;
+    const walkWeight = 50;
+    marker.onDowUpdate(dow);
+    expect(wrapper.state().dow).toEqual(dow);
+    marker.onTimeUpdate(time);
+    expect(wrapper.state().time).toEqual(time);
+    marker.onDistanceUpdate(distance);
+    expect(wrapper.state().distance).toEqual(distance);
+    marker.onDistanceUpdate(noDistance);
+    expect(wrapper.state().distance).toEqual(0);
+    marker.onWalkWeightUpdate(walkWeight);
+    expect(wrapper.state().walkWeight).toEqual(walkWeight);
+  });
+
+  it('Should submit data', () => {
+    const mockFn = jest.fn((state) => { });
+    const marker = shallow(<DestinationMarker onSearch={mockFn}/>);
+    marker.instance().onSubmit();
+    expect(mockFn).toBeCalled();
+  });
+
+  it('Should not submit data if no handler given', () => {
+    const marker = shallow(<DestinationMarker/>).instance();
+    const watched = jest.spyOn(marker, 'onSubmit');
+    marker.onSubmit();
+    expect(watched).toBeCalled();
+  });
+
 });

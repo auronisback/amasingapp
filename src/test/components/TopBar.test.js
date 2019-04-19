@@ -41,4 +41,13 @@ describe('<TopBar>', () => {
     resetButton.simulate('click');
     expect(resetFn).toBeCalled();
   });
+
+  it('Should call the search callback if enter is pressed', () => {
+    const evt = {key: 'Enter'};
+    const mockFn = jest.fn(() => {});
+    const bar = shallow(<TopBar onSearch={mockFn}/>);
+    const searchIn = bar.find('input.form-control');
+    expect(searchIn).toHaveLength(1);
+    searchIn.simulate('keypress', evt);
+  });
 });

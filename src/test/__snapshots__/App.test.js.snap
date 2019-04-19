@@ -28,6 +28,7 @@ App {
     "_callbacks": Array [],
     "_renderer": ReactShallowRenderer {
       "_context": Object {},
+      "_currentlyRenderingComponent": null,
       "_didScheduleRenderPhaseUpdate": false,
       "_dispatcher": Object {
         "readContext": [Function],
@@ -49,6 +50,7 @@ App {
       "_isReRender": false,
       "_newState": null,
       "_numberOfReRenders": 0,
+      "_previousComponentIdentity": null,
       "_renderPhaseUpdates": null,
       "_rendered": <div
         className="App"
@@ -78,6 +80,391 @@ App {
             onSearch={[Function]}
             onSearchClosed={[Function]}
             searchVisible={false}
+          />
+          <SuggestedParkList
+            parks={Array []}
+          />
+        </MapPanel>
+      </div>,
+      "_rendering": false,
+      "_updater": [Circular],
+      "_workInProgressHook": null,
+    },
+  },
+  Symbol(enzyme.__setState__): [Function],
+}
+`;
+
+exports[`<App> Should display parkings when searched 1`] = `
+App {
+  "_loadAllParks": [Function],
+  "_parseAvailableParkResponse": [Function],
+  "_parseMeasurementResponse": [Function],
+  "_showMessageDialog": [Function],
+  "context": Object {},
+  "onDestinationClick": [Function],
+  "onDialogClosed": [Function],
+  "onSearchWindowClosed": [Function],
+  "props": Object {},
+  "refs": Object {},
+  "reset": [Function],
+  "searchParks": [Function],
+  "searchStreetByName": [Function],
+  "setDestination": [Function],
+  "setState": [Function],
+  "state": Object {
+    "availableParks": Array [],
+    "destination": null,
+    "parks": Array [
+      Object {
+        "distance": 172.11040982285127,
+        "end": Object {
+          "lat": 37.7847887749,
+          "lng": -122.3978123114,
+        },
+        "haveMes": 0,
+        "id": 418062,
+        "number": 10,
+        "occupancy": 0.5441332389978301,
+        "start": Object {
+          "lat": 37.7855286539,
+          "lng": -122.3968769033,
+        },
+        "streetType": "primary",
+      },
+      Object {
+        "distance": 164.2239301886187,
+        "end": Object {
+          "lat": 37.7862874673,
+          "lng": -122.3991661637,
+        },
+        "haveMes": 1,
+        "id": 582012,
+        "number": 9,
+        "occupancy": 0.6283333333333334,
+        "start": Object {
+          "lat": 37.7872912895,
+          "lng": -122.400417421,
+        },
+        "streetType": "secondary",
+      },
+      Object {
+        "distance": 159.01291189194936,
+        "end": Object {
+          "lat": 37.7826131563,
+          "lng": -122.3976191913,
+        },
+        "haveMes": 1,
+        "id": 203032,
+        "number": 24,
+        "occupancy": 0.6691666666666667,
+        "start": Object {
+          "lat": 37.7836310601,
+          "lng": -122.3988905653,
+        },
+        "streetType": "primary",
+      },
+    ],
+    "searchVisible": false,
+    "searching": false,
+  },
+  "updater": Updater {
+    "_callbacks": Array [],
+    "_renderer": ReactShallowRenderer {
+      "_context": Object {},
+      "_currentlyRenderingComponent": null,
+      "_didScheduleRenderPhaseUpdate": false,
+      "_dispatcher": Object {
+        "readContext": [Function],
+        "useCallback": [Function],
+        "useContext": [Function],
+        "useDebugValue": [Function],
+        "useEffect": [Function],
+        "useImperativeHandle": [Function],
+        "useLayoutEffect": [Function],
+        "useMemo": [Function],
+        "useReducer": [Function],
+        "useRef": [Function],
+        "useState": [Function],
+      },
+      "_element": <App />,
+      "_firstWorkInProgressHook": null,
+      "_forcedUpdate": false,
+      "_instance": [Circular],
+      "_isReRender": false,
+      "_newState": null,
+      "_numberOfReRenders": 0,
+      "_previousComponentIdentity": null,
+      "_renderPhaseUpdates": null,
+      "_rendered": <div
+        className="App"
+      >
+        <TopBar
+          onReset={[Function]}
+          onSearch={[Function]}
+        />
+        <MapPanel
+          center={
+            Object {
+              "lat": 37.773972,
+              "lng": -122.431297,
+            }
+          }
+          gMapsApiKey="AIzaSyCra5AQ9_m4TUQRk-iVIBRKoIQvNyRsc2E"
+          onDestinationSelection={[Function]}
+          zoom={13}
+        >
+          <AvailableParkList
+            parks={Array []}
+          />
+          <DestinationMarker
+            destination={null}
+            isLoading={false}
+            onMarkerClick={[Function]}
+            onSearch={[Function]}
+            onSearchClosed={[Function]}
+            searchVisible={false}
+          />
+          <SuggestedParkList
+            parks={
+              Array [
+                Object {
+                  "distance": 172.11040982285127,
+                  "end": Object {
+                    "lat": 37.7847887749,
+                    "lng": -122.3978123114,
+                  },
+                  "haveMes": 0,
+                  "id": 418062,
+                  "number": 10,
+                  "occupancy": 0.5441332389978301,
+                  "start": Object {
+                    "lat": 37.7855286539,
+                    "lng": -122.3968769033,
+                  },
+                  "streetType": "primary",
+                },
+                Object {
+                  "distance": 164.2239301886187,
+                  "end": Object {
+                    "lat": 37.7862874673,
+                    "lng": -122.3991661637,
+                  },
+                  "haveMes": 1,
+                  "id": 582012,
+                  "number": 9,
+                  "occupancy": 0.6283333333333334,
+                  "start": Object {
+                    "lat": 37.7872912895,
+                    "lng": -122.400417421,
+                  },
+                  "streetType": "secondary",
+                },
+                Object {
+                  "distance": 159.01291189194936,
+                  "end": Object {
+                    "lat": 37.7826131563,
+                    "lng": -122.3976191913,
+                  },
+                  "haveMes": 1,
+                  "id": 203032,
+                  "number": 24,
+                  "occupancy": 0.6691666666666667,
+                  "start": Object {
+                    "lat": 37.7836310601,
+                    "lng": -122.3988905653,
+                  },
+                  "streetType": "primary",
+                },
+              ]
+            }
+          />
+        </MapPanel>
+      </div>,
+      "_rendering": false,
+      "_updater": [Circular],
+      "_workInProgressHook": null,
+    },
+  },
+  Symbol(enzyme.__setState__): [Function],
+}
+`;
+
+exports[`<App> Should reset marker and destination on demand 1`] = `
+App {
+  "_loadAllParks": [Function],
+  "_parseAvailableParkResponse": [Function],
+  "_parseMeasurementResponse": [Function],
+  "_showMessageDialog": [Function],
+  "context": Object {},
+  "onDestinationClick": [Function],
+  "onDialogClosed": [Function],
+  "onSearchWindowClosed": [Function],
+  "props": Object {},
+  "refs": Object {},
+  "reset": [Function],
+  "searchParks": [Function],
+  "searchStreetByName": [Function],
+  "setDestination": [Function],
+  "setState": [Function],
+  "state": Object {
+    "availableParks": Array [],
+    "destination": null,
+    "parks": Array [],
+    "searchVisible": true,
+    "searching": false,
+  },
+  "updater": Updater {
+    "_callbacks": Array [],
+    "_renderer": ReactShallowRenderer {
+      "_context": Object {},
+      "_currentlyRenderingComponent": null,
+      "_didScheduleRenderPhaseUpdate": false,
+      "_dispatcher": Object {
+        "readContext": [Function],
+        "useCallback": [Function],
+        "useContext": [Function],
+        "useDebugValue": [Function],
+        "useEffect": [Function],
+        "useImperativeHandle": [Function],
+        "useLayoutEffect": [Function],
+        "useMemo": [Function],
+        "useReducer": [Function],
+        "useRef": [Function],
+        "useState": [Function],
+      },
+      "_element": <App />,
+      "_firstWorkInProgressHook": null,
+      "_forcedUpdate": false,
+      "_instance": [Circular],
+      "_isReRender": false,
+      "_newState": null,
+      "_numberOfReRenders": 0,
+      "_previousComponentIdentity": null,
+      "_renderPhaseUpdates": null,
+      "_rendered": <div
+        className="App"
+      >
+        <TopBar
+          onReset={[Function]}
+          onSearch={[Function]}
+        />
+        <MapPanel
+          center={
+            Object {
+              "lat": 37.773972,
+              "lng": -122.431297,
+            }
+          }
+          gMapsApiKey="AIzaSyCra5AQ9_m4TUQRk-iVIBRKoIQvNyRsc2E"
+          onDestinationSelection={[Function]}
+          zoom={13}
+        >
+          <AvailableParkList
+            parks={Array []}
+          />
+          <DestinationMarker
+            destination={null}
+            isLoading={false}
+            onMarkerClick={[Function]}
+            onSearch={[Function]}
+            onSearchClosed={[Function]}
+            searchVisible={true}
+          />
+          <SuggestedParkList
+            parks={Array []}
+          />
+        </MapPanel>
+      </div>,
+      "_rendering": false,
+      "_updater": [Circular],
+      "_workInProgressHook": null,
+    },
+  },
+  Symbol(enzyme.__setState__): [Function],
+}
+`;
+
+exports[`<App> Should search by street name 1`] = `
+App {
+  "_loadAllParks": [Function],
+  "_parseAvailableParkResponse": [Function],
+  "_parseMeasurementResponse": [Function],
+  "_showMessageDialog": [Function],
+  "context": Object {},
+  "onDestinationClick": [Function],
+  "onDialogClosed": [Function],
+  "onSearchWindowClosed": [Function],
+  "props": Object {},
+  "refs": Object {},
+  "reset": [Function],
+  "searchParks": [Function],
+  "searchStreetByName": [Function],
+  "setDestination": [Function],
+  "setState": [Function],
+  "state": Object {
+    "availableParks": Array [],
+    "destination": null,
+    "parks": Array [],
+    "searchVisible": true,
+    "searching": false,
+  },
+  "updater": Updater {
+    "_callbacks": Array [],
+    "_renderer": ReactShallowRenderer {
+      "_context": Object {},
+      "_currentlyRenderingComponent": null,
+      "_didScheduleRenderPhaseUpdate": false,
+      "_dispatcher": Object {
+        "readContext": [Function],
+        "useCallback": [Function],
+        "useContext": [Function],
+        "useDebugValue": [Function],
+        "useEffect": [Function],
+        "useImperativeHandle": [Function],
+        "useLayoutEffect": [Function],
+        "useMemo": [Function],
+        "useReducer": [Function],
+        "useRef": [Function],
+        "useState": [Function],
+      },
+      "_element": <App />,
+      "_firstWorkInProgressHook": null,
+      "_forcedUpdate": false,
+      "_instance": [Circular],
+      "_isReRender": false,
+      "_newState": null,
+      "_numberOfReRenders": 0,
+      "_previousComponentIdentity": null,
+      "_renderPhaseUpdates": null,
+      "_rendered": <div
+        className="App"
+      >
+        <TopBar
+          onReset={[Function]}
+          onSearch={[Function]}
+        />
+        <MapPanel
+          center={
+            Object {
+              "lat": 37.773972,
+              "lng": -122.431297,
+            }
+          }
+          gMapsApiKey="AIzaSyCra5AQ9_m4TUQRk-iVIBRKoIQvNyRsc2E"
+          onDestinationSelection={[Function]}
+          zoom={13}
+        >
+          <AvailableParkList
+            parks={Array []}
+          />
+          <DestinationMarker
+            destination={null}
+            isLoading={false}
+            onMarkerClick={[Function]}
+            onSearch={[Function]}
+            onSearchClosed={[Function]}
+            searchVisible={true}
           />
           <SuggestedParkList
             parks={Array []}
@@ -127,6 +514,7 @@ App {
     "_callbacks": Array [],
     "_renderer": ReactShallowRenderer {
       "_context": Object {},
+      "_currentlyRenderingComponent": null,
       "_didScheduleRenderPhaseUpdate": false,
       "_dispatcher": Object {
         "readContext": [Function],
@@ -148,6 +536,7 @@ App {
       "_isReRender": false,
       "_newState": null,
       "_numberOfReRenders": 0,
+      "_previousComponentIdentity": null,
       "_renderPhaseUpdates": null,
       "_rendered": <div
         className="App"
@@ -236,6 +625,7 @@ App {
     "_callbacks": Array [],
     "_renderer": ReactShallowRenderer {
       "_context": Object {},
+      "_currentlyRenderingComponent": null,
       "_didScheduleRenderPhaseUpdate": false,
       "_dispatcher": Object {
         "readContext": [Function],
@@ -257,6 +647,7 @@ App {
       "_isReRender": false,
       "_newState": null,
       "_numberOfReRenders": 0,
+      "_previousComponentIdentity": null,
       "_renderPhaseUpdates": null,
       "_rendered": <div
         className="App"
@@ -311,6 +702,733 @@ App {
 }
 `;
 
+exports[`<App> Should show a message dialog 1`] = `
+App {
+  "_loadAllParks": [Function],
+  "_parseAvailableParkResponse": [Function],
+  "_parseMeasurementResponse": [Function],
+  "_showMessageDialog": [Function],
+  "context": Object {},
+  "onDestinationClick": [Function],
+  "onDialogClosed": [Function],
+  "onSearchWindowClosed": [Function],
+  "props": Object {},
+  "refs": Object {},
+  "reset": [Function],
+  "searchParks": [Function],
+  "searchStreetByName": [Function],
+  "setDestination": [Function],
+  "setState": [Function],
+  "state": Object {
+    "availableParks": Array [],
+    "destination": null,
+    "error": Object {
+      "message": "Test Message",
+      "type": "info",
+    },
+    "parks": Array [],
+    "searchVisible": true,
+    "searching": false,
+  },
+  "updater": Updater {
+    "_callbacks": Array [],
+    "_renderer": ReactShallowRenderer {
+      "_context": Object {},
+      "_currentlyRenderingComponent": null,
+      "_didScheduleRenderPhaseUpdate": false,
+      "_dispatcher": Object {
+        "readContext": [Function],
+        "useCallback": [Function],
+        "useContext": [Function],
+        "useDebugValue": [Function],
+        "useEffect": [Function],
+        "useImperativeHandle": [Function],
+        "useLayoutEffect": [Function],
+        "useMemo": [Function],
+        "useReducer": [Function],
+        "useRef": [Function],
+        "useState": [Function],
+      },
+      "_element": <App />,
+      "_firstWorkInProgressHook": null,
+      "_forcedUpdate": false,
+      "_instance": [Circular],
+      "_isReRender": false,
+      "_newState": null,
+      "_numberOfReRenders": 0,
+      "_previousComponentIdentity": null,
+      "_renderPhaseUpdates": null,
+      "_rendered": <div
+        className="App"
+      >
+        <TopBar
+          onReset={[Function]}
+          onSearch={[Function]}
+        />
+        <MapPanel
+          center={
+            Object {
+              "lat": 37.773972,
+              "lng": -122.431297,
+            }
+          }
+          gMapsApiKey="AIzaSyCra5AQ9_m4TUQRk-iVIBRKoIQvNyRsc2E"
+          onDestinationSelection={[Function]}
+          zoom={13}
+        >
+          <AvailableParkList
+            parks={Array []}
+          />
+          <DestinationMarker
+            destination={null}
+            isLoading={false}
+            onMarkerClick={[Function]}
+            onSearch={[Function]}
+            onSearchClosed={[Function]}
+            searchVisible={true}
+          />
+          <SuggestedParkList
+            parks={Array []}
+          />
+        </MapPanel>
+        <MessageDialog
+          message="Test Message"
+          onClose={[Function]}
+          type="info"
+        />
+      </div>,
+      "_rendering": false,
+      "_updater": [Circular],
+      "_workInProgressHook": null,
+    },
+  },
+  Symbol(enzyme.__setState__): [Function],
+}
+`;
+
+exports[`<App> Should show a message dialog 2`] = `
+App {
+  "_loadAllParks": [Function],
+  "_parseAvailableParkResponse": [Function],
+  "_parseMeasurementResponse": [Function],
+  "_showMessageDialog": [Function],
+  "context": Object {},
+  "onDestinationClick": [Function],
+  "onDialogClosed": [Function],
+  "onSearchWindowClosed": [Function],
+  "props": Object {},
+  "refs": Object {},
+  "reset": [Function],
+  "searchParks": [Function],
+  "searchStreetByName": [Function],
+  "setDestination": [Function],
+  "setState": [Function],
+  "state": Object {
+    "availableParks": Array [],
+    "destination": null,
+    "error": null,
+    "parks": Array [],
+    "searchVisible": true,
+    "searching": false,
+  },
+  "updater": Updater {
+    "_callbacks": Array [],
+    "_renderer": ReactShallowRenderer {
+      "_context": Object {},
+      "_currentlyRenderingComponent": null,
+      "_didScheduleRenderPhaseUpdate": false,
+      "_dispatcher": Object {
+        "readContext": [Function],
+        "useCallback": [Function],
+        "useContext": [Function],
+        "useDebugValue": [Function],
+        "useEffect": [Function],
+        "useImperativeHandle": [Function],
+        "useLayoutEffect": [Function],
+        "useMemo": [Function],
+        "useReducer": [Function],
+        "useRef": [Function],
+        "useState": [Function],
+      },
+      "_element": <App />,
+      "_firstWorkInProgressHook": null,
+      "_forcedUpdate": false,
+      "_instance": [Circular],
+      "_isReRender": false,
+      "_newState": null,
+      "_numberOfReRenders": 0,
+      "_previousComponentIdentity": null,
+      "_renderPhaseUpdates": null,
+      "_rendered": <div
+        className="App"
+      >
+        <TopBar
+          onReset={[Function]}
+          onSearch={[Function]}
+        />
+        <MapPanel
+          center={
+            Object {
+              "lat": 37.773972,
+              "lng": -122.431297,
+            }
+          }
+          gMapsApiKey="AIzaSyCra5AQ9_m4TUQRk-iVIBRKoIQvNyRsc2E"
+          onDestinationSelection={[Function]}
+          zoom={13}
+        >
+          <AvailableParkList
+            parks={Array []}
+          />
+          <DestinationMarker
+            destination={null}
+            isLoading={false}
+            onMarkerClick={[Function]}
+            onSearch={[Function]}
+            onSearchClosed={[Function]}
+            searchVisible={true}
+          />
+          <SuggestedParkList
+            parks={Array []}
+          />
+        </MapPanel>
+      </div>,
+      "_rendering": false,
+      "_updater": [Circular],
+      "_workInProgressHook": null,
+    },
+  },
+  Symbol(enzyme.__setState__): [Function],
+}
+`;
+
+exports[`<App> Should show a message dialog 3`] = `
+App {
+  "_loadAllParks": [Function],
+  "_parseAvailableParkResponse": [Function],
+  "_parseMeasurementResponse": [Function],
+  "_showMessageDialog": [Function],
+  "context": Object {},
+  "onDestinationClick": [Function],
+  "onDialogClosed": [Function],
+  "onSearchWindowClosed": [Function],
+  "props": Object {},
+  "refs": Object {},
+  "reset": [Function],
+  "searchParks": [Function],
+  "searchStreetByName": [Function],
+  "setDestination": [Function],
+  "setState": [Function],
+  "state": Object {
+    "availableParks": Array [],
+    "destination": null,
+    "error": Object {
+      "message": "Test Error Message",
+      "type": "danger",
+    },
+    "parks": Array [],
+    "searchVisible": true,
+    "searching": false,
+  },
+  "updater": Updater {
+    "_callbacks": Array [],
+    "_renderer": ReactShallowRenderer {
+      "_context": Object {},
+      "_currentlyRenderingComponent": null,
+      "_didScheduleRenderPhaseUpdate": false,
+      "_dispatcher": Object {
+        "readContext": [Function],
+        "useCallback": [Function],
+        "useContext": [Function],
+        "useDebugValue": [Function],
+        "useEffect": [Function],
+        "useImperativeHandle": [Function],
+        "useLayoutEffect": [Function],
+        "useMemo": [Function],
+        "useReducer": [Function],
+        "useRef": [Function],
+        "useState": [Function],
+      },
+      "_element": <App />,
+      "_firstWorkInProgressHook": null,
+      "_forcedUpdate": false,
+      "_instance": [Circular],
+      "_isReRender": false,
+      "_newState": null,
+      "_numberOfReRenders": 0,
+      "_previousComponentIdentity": null,
+      "_renderPhaseUpdates": null,
+      "_rendered": <div
+        className="App"
+      >
+        <TopBar
+          onReset={[Function]}
+          onSearch={[Function]}
+        />
+        <MapPanel
+          center={
+            Object {
+              "lat": 37.773972,
+              "lng": -122.431297,
+            }
+          }
+          gMapsApiKey="AIzaSyCra5AQ9_m4TUQRk-iVIBRKoIQvNyRsc2E"
+          onDestinationSelection={[Function]}
+          zoom={13}
+        >
+          <AvailableParkList
+            parks={Array []}
+          />
+          <DestinationMarker
+            destination={null}
+            isLoading={false}
+            onMarkerClick={[Function]}
+            onSearch={[Function]}
+            onSearchClosed={[Function]}
+            searchVisible={true}
+          />
+          <SuggestedParkList
+            parks={Array []}
+          />
+        </MapPanel>
+        <MessageDialog
+          message="Test Error Message"
+          onClose={[Function]}
+          type="danger"
+        />
+      </div>,
+      "_rendering": false,
+      "_updater": [Circular],
+      "_workInProgressHook": null,
+    },
+  },
+  Symbol(enzyme.__setState__): [Function],
+}
+`;
+
+exports[`<App> Should show a message if no suggested parking has been found 1`] = `
+App {
+  "_loadAllParks": [Function],
+  "_parseAvailableParkResponse": [Function],
+  "_parseMeasurementResponse": [Function],
+  "_showMessageDialog": [Function],
+  "context": Object {},
+  "onDestinationClick": [Function],
+  "onDialogClosed": [Function],
+  "onSearchWindowClosed": [Function],
+  "props": Object {},
+  "refs": Object {},
+  "reset": [Function],
+  "searchParks": [Function],
+  "searchStreetByName": [Function],
+  "setDestination": [Function],
+  "setState": [Function],
+  "state": Object {
+    "availableParks": Array [],
+    "destination": null,
+    "error": Object {
+      "message": "No parking lots found with given criteria.",
+      "type": "info",
+    },
+    "parks": Array [],
+    "searchVisible": true,
+    "searching": false,
+  },
+  "updater": Updater {
+    "_callbacks": Array [],
+    "_renderer": ReactShallowRenderer {
+      "_context": Object {},
+      "_currentlyRenderingComponent": null,
+      "_didScheduleRenderPhaseUpdate": false,
+      "_dispatcher": Object {
+        "readContext": [Function],
+        "useCallback": [Function],
+        "useContext": [Function],
+        "useDebugValue": [Function],
+        "useEffect": [Function],
+        "useImperativeHandle": [Function],
+        "useLayoutEffect": [Function],
+        "useMemo": [Function],
+        "useReducer": [Function],
+        "useRef": [Function],
+        "useState": [Function],
+      },
+      "_element": <App />,
+      "_firstWorkInProgressHook": null,
+      "_forcedUpdate": false,
+      "_instance": [Circular],
+      "_isReRender": false,
+      "_newState": null,
+      "_numberOfReRenders": 0,
+      "_previousComponentIdentity": null,
+      "_renderPhaseUpdates": null,
+      "_rendered": <div
+        className="App"
+      >
+        <TopBar
+          onReset={[Function]}
+          onSearch={[Function]}
+        />
+        <MapPanel
+          center={
+            Object {
+              "lat": 37.773972,
+              "lng": -122.431297,
+            }
+          }
+          gMapsApiKey="AIzaSyCra5AQ9_m4TUQRk-iVIBRKoIQvNyRsc2E"
+          onDestinationSelection={[Function]}
+          zoom={13}
+        >
+          <AvailableParkList
+            parks={Array []}
+          />
+          <DestinationMarker
+            destination={null}
+            isLoading={false}
+            onMarkerClick={[Function]}
+            onSearch={[Function]}
+            onSearchClosed={[Function]}
+            searchVisible={true}
+          />
+          <SuggestedParkList
+            parks={Array []}
+          />
+        </MapPanel>
+        <MessageDialog
+          message="No parking lots found with given criteria."
+          onClose={[Function]}
+          type="info"
+        />
+      </div>,
+      "_rendering": false,
+      "_updater": [Circular],
+      "_workInProgressHook": null,
+    },
+  },
+  Symbol(enzyme.__setState__): [Function],
+}
+`;
+
+exports[`<App> Should show available parkings 1`] = `
+App {
+  "_loadAllParks": [Function],
+  "_parseAvailableParkResponse": [Function],
+  "_parseMeasurementResponse": [Function],
+  "_showMessageDialog": [Function],
+  "context": Object {},
+  "onDestinationClick": [Function],
+  "onDialogClosed": [Function],
+  "onSearchWindowClosed": [Function],
+  "props": Object {},
+  "refs": Object {},
+  "reset": [Function],
+  "searchParks": [Function],
+  "searchStreetByName": [Function],
+  "setDestination": [Function],
+  "setState": [Function],
+  "state": Object {
+    "availableParks": Array [
+      Object {
+        "end": Object {
+          "lat": 37.7803731644,
+          "lng": -122.4320478777,
+        },
+        "id": 415112,
+        "start": Object {
+          "lat": 37.7798782941,
+          "lng": -122.4319472943,
+        },
+      },
+      Object {
+        "end": Object {
+          "lat": 37.7813095957,
+          "lng": -122.432372762,
+        },
+        "id": 415121,
+        "start": Object {
+          "lat": 37.7805954536,
+          "lng": -122.4322279219,
+        },
+      },
+      Object {
+        "end": Object {
+          "lat": 37.7823224703,
+          "lng": -122.4325779521,
+        },
+        "id": 415131,
+        "start": Object {
+          "lat": 37.7817290284,
+          "lng": -122.4324572521,
+        },
+      },
+      Object {
+        "end": Object {
+          "lat": 37.7822510561,
+          "lng": -122.432427077,
+        },
+        "id": 415132,
+        "start": Object {
+          "lat": 37.7817471334,
+          "lng": -122.4323254878,
+        },
+      },
+      Object {
+        "end": Object {
+          "lat": 37.7857151479,
+          "lng": -122.4331291491,
+        },
+        "id": 415172,
+        "start": Object {
+          "lat": 37.785290686,
+          "lng": -122.4330436532,
+        },
+      },
+      Object {
+        "end": Object {
+          "lat": 37.786919131,
+          "lng": -122.433371555,
+        },
+        "id": 415182,
+        "start": Object {
+          "lat": 37.7862804265,
+          "lng": -122.4332428083,
+        },
+      },
+      Object {
+        "end": Object {
+          "lat": 37.7887557835,
+          "lng": -122.4338774894,
+        },
+        "id": 415201,
+        "start": Object {
+          "lat": 37.7880617582,
+          "lng": -122.4337376785,
+        },
+      },
+      Object {
+        "end": Object {
+          "lat": 37.7914313015,
+          "lng": -122.4344166164,
+        },
+        "id": 415231,
+        "start": Object {
+          "lat": 37.7908237779,
+          "lng": -122.4342939046,
+        },
+      },
+      Object {
+        "end": Object {
+          "lat": 37.7993562663,
+          "lng": -122.4358801046,
+        },
+        "id": 415322,
+        "start": Object {
+          "lat": 37.7990716154,
+          "lng": -122.4358227721,
+        },
+      },
+      Object {
+        "end": Object {
+          "lat": 37.7847887749,
+          "lng": -122.3978123114,
+        },
+        "id": 418062,
+        "start": Object {
+          "lat": 37.7855286539,
+          "lng": -122.3968769033,
+        },
+      },
+    ],
+    "destination": null,
+    "parks": Array [],
+    "searchVisible": true,
+    "searching": false,
+  },
+  "updater": Updater {
+    "_callbacks": Array [],
+    "_renderer": ReactShallowRenderer {
+      "_context": Object {},
+      "_currentlyRenderingComponent": null,
+      "_didScheduleRenderPhaseUpdate": false,
+      "_dispatcher": Object {
+        "readContext": [Function],
+        "useCallback": [Function],
+        "useContext": [Function],
+        "useDebugValue": [Function],
+        "useEffect": [Function],
+        "useImperativeHandle": [Function],
+        "useLayoutEffect": [Function],
+        "useMemo": [Function],
+        "useReducer": [Function],
+        "useRef": [Function],
+        "useState": [Function],
+      },
+      "_element": <App />,
+      "_firstWorkInProgressHook": null,
+      "_forcedUpdate": false,
+      "_instance": [Circular],
+      "_isReRender": false,
+      "_newState": null,
+      "_numberOfReRenders": 0,
+      "_previousComponentIdentity": null,
+      "_renderPhaseUpdates": null,
+      "_rendered": <div
+        className="App"
+      >
+        <TopBar
+          onReset={[Function]}
+          onSearch={[Function]}
+        />
+        <MapPanel
+          center={
+            Object {
+              "lat": 37.773972,
+              "lng": -122.431297,
+            }
+          }
+          gMapsApiKey="AIzaSyCra5AQ9_m4TUQRk-iVIBRKoIQvNyRsc2E"
+          onDestinationSelection={[Function]}
+          zoom={13}
+        >
+          <AvailableParkList
+            parks={
+              Array [
+                Object {
+                  "end": Object {
+                    "lat": 37.7803731644,
+                    "lng": -122.4320478777,
+                  },
+                  "id": 415112,
+                  "start": Object {
+                    "lat": 37.7798782941,
+                    "lng": -122.4319472943,
+                  },
+                },
+                Object {
+                  "end": Object {
+                    "lat": 37.7813095957,
+                    "lng": -122.432372762,
+                  },
+                  "id": 415121,
+                  "start": Object {
+                    "lat": 37.7805954536,
+                    "lng": -122.4322279219,
+                  },
+                },
+                Object {
+                  "end": Object {
+                    "lat": 37.7823224703,
+                    "lng": -122.4325779521,
+                  },
+                  "id": 415131,
+                  "start": Object {
+                    "lat": 37.7817290284,
+                    "lng": -122.4324572521,
+                  },
+                },
+                Object {
+                  "end": Object {
+                    "lat": 37.7822510561,
+                    "lng": -122.432427077,
+                  },
+                  "id": 415132,
+                  "start": Object {
+                    "lat": 37.7817471334,
+                    "lng": -122.4323254878,
+                  },
+                },
+                Object {
+                  "end": Object {
+                    "lat": 37.7857151479,
+                    "lng": -122.4331291491,
+                  },
+                  "id": 415172,
+                  "start": Object {
+                    "lat": 37.785290686,
+                    "lng": -122.4330436532,
+                  },
+                },
+                Object {
+                  "end": Object {
+                    "lat": 37.786919131,
+                    "lng": -122.433371555,
+                  },
+                  "id": 415182,
+                  "start": Object {
+                    "lat": 37.7862804265,
+                    "lng": -122.4332428083,
+                  },
+                },
+                Object {
+                  "end": Object {
+                    "lat": 37.7887557835,
+                    "lng": -122.4338774894,
+                  },
+                  "id": 415201,
+                  "start": Object {
+                    "lat": 37.7880617582,
+                    "lng": -122.4337376785,
+                  },
+                },
+                Object {
+                  "end": Object {
+                    "lat": 37.7914313015,
+                    "lng": -122.4344166164,
+                  },
+                  "id": 415231,
+                  "start": Object {
+                    "lat": 37.7908237779,
+                    "lng": -122.4342939046,
+                  },
+                },
+                Object {
+                  "end": Object {
+                    "lat": 37.7993562663,
+                    "lng": -122.4358801046,
+                  },
+                  "id": 415322,
+                  "start": Object {
+                    "lat": 37.7990716154,
+                    "lng": -122.4358227721,
+                  },
+                },
+                Object {
+                  "end": Object {
+                    "lat": 37.7847887749,
+                    "lng": -122.3978123114,
+                  },
+                  "id": 418062,
+                  "start": Object {
+                    "lat": 37.7855286539,
+                    "lng": -122.3968769033,
+                  },
+                },
+              ]
+            }
+          />
+          <DestinationMarker
+            destination={null}
+            isLoading={false}
+            onMarkerClick={[Function]}
+            onSearch={[Function]}
+            onSearchClosed={[Function]}
+            searchVisible={true}
+          />
+          <SuggestedParkList
+            parks={Array []}
+          />
+        </MapPanel>
+      </div>,
+      "_rendering": false,
+      "_updater": [Circular],
+      "_workInProgressHook": null,
+    },
+  },
+  Symbol(enzyme.__setState__): [Function],
+}
+`;
+
 exports[`<App> Should show the marker if a destination is clicked 1`] = `
 App {
   "_loadAllParks": [Function],
@@ -339,6 +1457,7 @@ App {
     "_callbacks": Array [],
     "_renderer": ReactShallowRenderer {
       "_context": Object {},
+      "_currentlyRenderingComponent": null,
       "_didScheduleRenderPhaseUpdate": false,
       "_dispatcher": Object {
         "readContext": [Function],
@@ -360,6 +1479,7 @@ App {
       "_isReRender": false,
       "_newState": null,
       "_numberOfReRenders": 0,
+      "_previousComponentIdentity": null,
       "_renderPhaseUpdates": null,
       "_rendered": <div
         className="App"

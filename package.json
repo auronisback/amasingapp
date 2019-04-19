@@ -38,7 +38,7 @@
     "react-dom": "^16.8.3",
     "react-geocode": "^0.1.2",
     "react-google-maps": "^9.4.5",
-    "react-scripts": "2.1.5",
+    "react-scripts": "^2.1.8",
     "typescript": "^3.3.3333"
   },
   "scripts": {
@@ -59,6 +59,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "axios-mock-adapter": "^1.16.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.10.0",
     "enzyme-to-json": "^3.3.5",

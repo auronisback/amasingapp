@@ -60,6 +60,8 @@ class App extends Component {
    * */
   constructor(props) {
     super(props);
+    // Initializing the AjaxWrapper
+
     // Initializing the Geocoder
     Geocode.setApiKey(App.getAPIKey());
     // Loading all parking in order to show them on the map
@@ -94,7 +96,7 @@ class App extends Component {
               zoom={this.state.destination ? App.configuration.destinationMapZoom : App.configuration.mapZoom}
               onDestinationSelection={this.setDestination}
           >
-            <AvailableParkList parks={this.state.availableParks} />
+            <AvailableParkList parks={this.state.availableParks}/>
             <DestinationMarker
                 destination={this.state.destination}
                 searchVisible={this.state.searchVisible}
@@ -103,7 +105,7 @@ class App extends Component {
                 onMarkerClick={this.onDestinationClick}
                 isLoading={this.state.searching}
             />
-            <SuggestedParkList parks={this.state.parks} />
+            <SuggestedParkList parks={this.state.parks}/>
           </MapPanel>
           {dialog}
         </div>
@@ -184,18 +186,20 @@ class App extends Component {
    * when data is ready.
    *
    * @param {number} params The search parameters
+   * @return Promise The promise that has to be fulfilled
    * */
   searchParks = (params) => {
     this.setState({parks: [], searching: true});
-    this._sendRequest(params);
+    return this._sendRequest(params);
   };
 
   /**
    * Sends a request to the endpoint in order to obtain park lots.
-   * @param {number} params The search parameters
+   * @param {object} params The search parameters
+   * @return Promise The async function
    * */
   _sendRequest(params) {
-    axios.post(App.configuration.measurementsEndpoint, {
+    return axios.post(App.configuration.measurementsEndpoint, {
       lat: this.state.destination.lat,
       lon: this.state.destination.lng,
       maxDistance: params.distance,
@@ -204,14 +208,12 @@ class App extends Component {
       minute: params.time.m,
       walkWeight: 1 - params.walkWeight / 100
     }).then((response) => {
-          this._parseMeasurementResponse(response.data);
-        }, (error) => {
-          this._showMessageDialog(error.message, MessageDialog.TYPE_ERROR);
-        }
-    ).finally(() => {
-      // In any case, the search is over
+      this._parseMeasurementResponse(response.data);
       this.setState({searching: false});
-    })
+    }).catch((error) => {
+      this._showMessageDialog(error.message, MessageDialog.TYPE_ERROR);
+      this.setState({searching: false});
+    });
   };
 
   /**

@@ -11,7 +11,7 @@ describe('<ParkMarker>', () => {
     expect(marker).toMatchSnapshot();
   });
 
-  it('Should render correctly if park has been passed', () => {
+  it('Should show the marker if the position has been set', () => {
     const stubPark = {
       occupancy: 0.12,
       distance: 100,
@@ -22,7 +22,21 @@ describe('<ParkMarker>', () => {
       end: {lat: 2, lng: 2},
       label: 1
     };
-    const marker = shallow(<ParkMarker park={stubPark} />);
+    const marker = shallow(<ParkMarker parking={stubPark} />);
     expect(marker).toMatchSnapshot();
+  });
+
+  it('Should toggle the info window appearance', () => {
+    const wrapper = shallow(<ParkMarker/>);
+    const marker = wrapper.instance();
+    marker.toggleOpen();
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('Should close the window', () => {
+    const wrapper = shallow(<ParkMarker/>);
+    const marker = wrapper.instance();
+    marker.handleClose();
+    expect(wrapper).toMatchSnapshot();
   });
 });

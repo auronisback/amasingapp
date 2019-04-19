@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f510503-9d24-4176-8581-147ca6ca868f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonar-project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sonar-project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/__snapshots__/App.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/__snapshots__/App.test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/components/DestinationMarker.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/components/DestinationMarker.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/components/MapPanel.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/components/MapPanel.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/components/ParkMarker.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/components/ParkMarker.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/components/TopBar.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/components/TopBar.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/components/__snapshots__/ParkMarker.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/components/__snapshots__/ParkMarker.test.js.snap" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-894">
-              <caret line="110" column="3" selection-start-line="110" selection-start-column="3" selection-end-line="110" selection-end-column="3" />
+            <state relative-caret-position="-1072">
+              <caret line="210" column="45" selection-start-line="210" selection-start-column="45" selection-end-line="210" selection-end-column="45" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -26,10 +36,67 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="46" column="11" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/App.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+            <state relative-caret-position="159">
+              <caret line="332" column="44" selection-start-line="332" selection-start-column="44" selection-end-line="332" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/components/DestinationMarker.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="61" column="49" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/components/MapPanel.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/components/ParkMarker.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/components/TopBar.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="50" column="39" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -49,7 +116,6 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>onSearch</find>
-      <find>axios</find>
       <find>console.log</find>
       <find>_sendRequest</find>
       <find>sendRe</find>
@@ -60,6 +126,8 @@
       <find>_getParkData</find>
       <find>jest</find>
       <find>props</find>
+      <find>axios</find>
+      <find>state</find>
     </findStrings>
   </component>
   <component name="Git.Rebase.Settings">
@@ -95,26 +163,27 @@
         <option value="$PROJECT_DIR$/src/components/ParkInfo.js" />
         <option value="$PROJECT_DIR$/src/components/custom.scss" />
         <option value="$PROJECT_DIR$/src/components/MapPanel.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/TopBar.js" />
-        <option value="$PROJECT_DIR$/src/test/components/TopBar.test.js" />
         <option value="$PROJECT_DIR$/src/components/DestinationMarker.js" />
-        <option value="$PROJECT_DIR$/src/test/components/DestinationMarker.test.js" />
         <option value="$PROJECT_DIR$/src/components/SearchWindow.js" />
         <option value="$PROJECT_DIR$/src/test/components/SearchWindow.test.js" />
-        <option value="$PROJECT_DIR$/src/test/components/MapPanel.test.js" />
         <option value="$PROJECT_DIR$/src/test/components/ParkInfo.test.js" />
         <option value="$PROJECT_DIR$/src/test/components/ParkStroke.test.js" />
         <option value="$PROJECT_DIR$/src/components/AvailableParkList.js" />
         <option value="$PROJECT_DIR$/src/test/components/AvailableParkList.test.js" />
         <option value="$PROJECT_DIR$/src/test/components/DialogMessage.test.js" />
         <option value="$PROJECT_DIR$/src/test/components/MessageDialog.test.js" />
-        <option value="$PROJECT_DIR$/src/test/components/ParkMarker.test.js" />
         <option value="$PROJECT_DIR$/src/components/ParkMarker.js" />
         <option value="$PROJECT_DIR$/src/components/SuggestedParkList.js" />
         <option value="$PROJECT_DIR$/src/test/components/SuggestedParkList.test.js" />
+        <option value="$PROJECT_DIR$/src/AjaxWrapper.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/test/App.test.js" />
+        <option value="$PROJECT_DIR$/src/test/components/DestinationMarker.test.js" />
+        <option value="$PROJECT_DIR$/src/test/components/MapPanel.test.js" />
+        <option value="$PROJECT_DIR$/src/test/components/ParkMarker.test.js" />
+        <option value="$PROJECT_DIR$/src/test/components/TopBar.test.js" />
       </list>
     </option>
   </component>
@@ -163,7 +232,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -193,6 +261,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -208,6 +277,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -226,7 +296,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.TopBar.test.js">
+  <component name="RunManager" selected="Jest.&lt;App&gt;.Should show a message dialog">
     <configuration name="App.test.js" type="JavaScriptTestRunnerJest" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -237,14 +307,18 @@
       <test-file value="$PROJECT_DIR$/src/test/App.test.js" />
       <method v="2" />
     </configuration>
-    <configuration name="TopBar.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="&lt;App&gt;.Should show a message dialog" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/src/test/components/TopBar.test.js" />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/test/App.test.js" />
+      <test-names>
+        <test-name value="&lt;App&gt;" />
+        <test-name value="Should show a message dialog" />
+      </test-names>
       <method v="2" />
     </configuration>
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -260,11 +334,11 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="coverage" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="deploy" />
+        <script value="coverage" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -292,11 +366,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.test" />
-        <item itemvalue="npm.build" />
-        <item itemvalue="Jest.TopBar.test.js" />
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.deploy" />
+        <item itemvalue="npm.test" />
+        <item itemvalue="Jest.&lt;App&gt;.Should show a message dialog" />
+        <item itemvalue="npm.coverage" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -333,6 +407,10 @@
       <workItem from="1552309313211" duration="2066000" />
       <workItem from="1552314922393" duration="8364000" />
       <workItem from="1554818289368" duration="1948000" />
+      <workItem from="1554989686152" duration="68000" />
+      <workItem from="1555414760665" duration="2959000" />
+      <workItem from="1555432038533" duration="4848000" />
+      <workItem from="1555668396174" duration="4710000" />
     </task>
     <task id="LOCAL-00001" summary="Master branch">
       <created>1551871766162</created>
@@ -387,9 +465,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="App_test_js - 2019.03.09 at 13h 22m 10s.xml">
-      <configuration name="App.test.js" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="TopBar_test_js - 2019.03.09 at 13h 25m 07s.xml">
       <configuration name="TopBar.test.js" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
@@ -414,23 +489,29 @@
     <history-entry file="TopBar_test_js - 2019.03.09 at 13h 34m 05s.xml">
       <configuration name="TopBar.test.js" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
+    <history-entry file="_App__Should_show_a_message_dialog - 2019.04.16 at 13h 53m 33s.xml">
+      <configuration name="&lt;App&gt;.Should show a message dialog" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="_App__Should_show_a_message_dialog - 2019.04.16 at 13h 53m 56s.xml">
+      <configuration name="&lt;App&gt;.Should show a message dialog" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118951000" />
+    <option name="totallyTimeSpent" value="131536000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1366" height="706" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6123894" visible="true" weight="0.2663126" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.60263157" visible="true" weight="0.2663126" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.3876106" side_tool="true" visible="true" weight="0.2663126" />
+      <window_info x="58" y="397" width="351" height="149" id="npm" order="2" sideWeight="0.39736843" side_tool="true" visible="true" weight="0.2663126" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32920355" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924126" weight="0.32743362" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924126" visible="true" weight="0.32743362" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38407078" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -438,9 +519,10 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924126" weight="0.32920355" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49924126" weight="0.33628318" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49924126" weight="0.3380531" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007587" side_tool="true" weight="0.32920355" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32920355" />
+      <window_info anchor="bottom" id="TypeScript" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -540,36 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/components/DestinationMarker.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="3" selection-end-column="71" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/components/SearchWindow.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="3" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/components/MapPanel.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/components/ParkInfo.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -621,16 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="33" lean-forward="true" selection-end-line="29" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/components/ParkMarker.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -711,13 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="50" column="4" lean-forward="true" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ParkInfo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -725,10 +760,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/components/TopBar.test.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/axios/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+        <state relative-caret-position="1920">
+          <caret line="128" column="14" selection-start-line="128" selection-start-column="14" selection-end-line="128" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AjaxWrapper.js" />
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="11" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/components/SearchWindow.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" selection-end-column="61" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -737,8 +787,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/App.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+        <state relative-caret-position="159">
+          <caret line="332" column="44" selection-start-line="332" selection-start-column="44" selection-end-line="332" selection-end-column="44" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -747,10 +797,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-894">
-          <caret line="110" column="3" selection-start-line="110" selection-start-column="3" selection-end-line="110" selection-end-column="3" />
+        <state relative-caret-position="-1072">
+          <caret line="210" column="45" selection-start-line="210" selection-start-column="45" selection-end-line="210" selection-end-column="45" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/components/DestinationMarker.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="61" column="49" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/components/MapPanel.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/components/ParkMarker.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/components/TopBar.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="50" column="39" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

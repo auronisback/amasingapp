@@ -10,4 +10,18 @@ describe('<MapPanel>', () => {
     const panel = shallow(<MapPanel/>);
     expect(panel).toMatchSnapshot();
   });
+
+  it('Shouldn\'t do anithing if no callback is set', () => {
+    const panel = shallow(<MapPanel />).instance();
+    const evt = {latLng: {lat: () => 100, lng: () => 100}};
+    panel.onMapClick(evt);
+  });
+
+  it('Should call back the destination function when clicked', () => {
+    const mockFn = jest.fn((lat, lng) => {});
+    const panel = shallow(<MapPanel onDestinationSelection={mockFn}/>).instance();
+    const evt = {latLng: {lat: () => 100, lng: () => 100}};
+    panel.onMapClick(evt);
+    expect(mockFn).toBeCalledWith(evt.latLng.lat(), evt.latLng.lng());
+  });
 });

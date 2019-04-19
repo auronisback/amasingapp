@@ -1,5 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<ParkMarker> Should close the window 1`] = `""`;
+
 exports[`<ParkMarker> Should not render if no park has been given 1`] = `""`;
 
-exports[`<ParkMarker> Should render correctly if park has been passed 1`] = `""`;
+exports[`<ParkMarker> Should show the marker if the position has been set 1`] = `
+<Marker
+  label="undefined"
+  onClick={[Function]}
+  position={
+    Object {
+      "lat": 1.5,
+      "lng": 1.5,
+    }
+  }
+>
+  <ParkStroke
+    color="#F00"
+    end={
+      Object {
+        "lat": 2,
+        "lng": 2,
+      }
+    }
+    opacity={1}
+    start={
+      Object {
+        "lat": 1,
+        "lng": 1,
+      }
+    }
+  />
+</Marker>
+`;
+
+exports[`<ParkMarker> Should toggle the info window appearance 1`] = `""`;
