@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0f510503-9d24-4176-8581-147ca6ca868f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/__snapshots__/App.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/__snapshots__/App.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/components/__snapshots__/SearchWindow.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/components/__snapshots__/SearchWindow.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/components/__snapshots__/TopBar.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/components/__snapshots__/TopBar.test.js.snap" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4000">
-              <caret line="210" column="45" selection-start-line="210" selection-start-column="45" selection-end-line="210" selection-end-column="45" />
+            <state relative-caret-position="80">
+              <caret line="201" column="42" selection-start-line="201" selection-start-column="42" selection-end-line="201" selection-end-column="42" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -28,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+            <state relative-caret-position="-615">
+              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -170,13 +167,13 @@
         <option value="$PROJECT_DIR$/src/components/SuggestedParkList.js" />
         <option value="$PROJECT_DIR$/src/test/components/SuggestedParkList.test.js" />
         <option value="$PROJECT_DIR$/src/AjaxWrapper.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/test/App.test.js" />
         <option value="$PROJECT_DIR$/src/test/components/DestinationMarker.test.js" />
         <option value="$PROJECT_DIR$/src/test/components/MapPanel.test.js" />
         <option value="$PROJECT_DIR$/src/test/components/ParkMarker.test.js" />
         <option value="$PROJECT_DIR$/src/test/components/TopBar.test.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/App.js" />
       </list>
     </option>
   </component>
@@ -206,17 +203,6 @@
             <path>
               <item name="amasingapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="amasingapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amasingapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amasingapp" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amasingapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amasingapp" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="jest-sonar-reporter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="amasingapp" type="b2602c69:ProjectViewProjectNode" />
@@ -415,7 +401,7 @@
       <workItem from="1555414760665" duration="2959000" />
       <workItem from="1555432038533" duration="4848000" />
       <workItem from="1555668396174" duration="5310000" />
-      <workItem from="1589744590634" duration="1035000" />
+      <workItem from="1589744590634" duration="2524000" />
     </task>
     <task id="LOCAL-00001" summary="Master branch">
       <created>1551871766162</created>
@@ -466,7 +452,21 @@
       <option name="project" value="LOCAL" />
       <updated>1554818376880</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added support for SonarQube and coverage reporting.">
+      <created>1589745650868</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1589745650868</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added support for SonarQube and coverage reporting.">
+      <created>1589745949248</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1589745949248</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -502,13 +502,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133171000" />
+    <option name="totallyTimeSpent" value="134660000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6035398" visible="true" weight="0.2661823" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6035398" visible="true" weight="0.2661823" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info x="58" y="397" width="351" height="149" id="npm" order="2" sideWeight="0.39646018" side_tool="true" visible="true" weight="0.2663126" />
       <window_info id="Designer" order="3" />
@@ -516,7 +516,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32920355" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924126" visible="true" weight="0.32721713" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49867898" visible="true" weight="0.32721713" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38407078" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -525,7 +525,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924126" weight="0.32920355" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49924126" weight="0.3379205" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007587" side_tool="true" weight="0.32920355" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.501321" side_tool="true" visible="true" weight="0.32721713" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32920355" />
       <window_info anchor="bottom" id="TypeScript" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -777,16 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4000">
-          <caret line="210" column="45" selection-start-line="210" selection-start-column="45" selection-end-line="210" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/components/DestinationMarker.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1160">
@@ -846,8 +836,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+        <state relative-caret-position="-615">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="201" column="42" selection-start-line="201" selection-start-column="42" selection-end-line="201" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

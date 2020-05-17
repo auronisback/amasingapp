@@ -199,7 +199,7 @@ class App extends Component {
    * @return Promise The async function
    * */
   _sendRequest(params) {
-    console.log("Ehy, I changed something");
+    console.log("Ehy, I changed somethings");
     return axios.post(App.configuration.measurementsEndpoint, {
       lat: this.state.destination.lat,
       lon: this.state.destination.lng,
